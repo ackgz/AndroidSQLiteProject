@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arka"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="91dp"
+        android:text="Merhaba Size Nasıl Yardımcı Olabilirim?"
+        android:textAlignment="center"
+        android:textColor="#790B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/magaza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/magaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="47dp"
+        android:text="Mağaza"
+        android:textColor="#790B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/turler"
+        app:layout_constraintStart_toStartOf="@+id/turler" />
+
+    <Button
+        android:id="@+id/turler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kitap türleri"
+        android:textColor="#790B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:text="Kitap ekle"
+        android:textColor="#790B0B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/turler"
+        app:layout_constraintTop_toBottomOf="@+id/turler" />
+
+    <Button
+        android:id="@+id/bilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="15dp"
+        android:text="Bilgi Al"
+        android:textColor="#790B0B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/ekle"
+        app:layout_constraintTop_toBottomOf="@+id/ekle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
